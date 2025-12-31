@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Growth Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">My Growth</div>
+  <div>
+    <a href="index.html" class="active">Dashboard</a>
+    <a href="habits.html">Habits</a>
+    <a href="learning.html">Learning</a>
+    <a href="work.html">Work</a>
+    <a href="weekly.html">Weekly</a>
+    <a href="focus-history.html">Focus History</a>
+    <a href="reflection.html">Reflection</a>
+    <a href="tasks-history.html">Tasks History</a>
+    <a href="habit-settings.html">Habit Settings</a>
+  </div>
+</nav>
+
+  <header>
+    <h1>My Growth Dashboard</h1>
+    <p id="date"></p>
+  </header>
+
+  <div class="hero-strip">
+    <h2 id="heroGreeting"></h2>
+    <p id="heroQuote"></p>
+  </div>
+
+  <main class="grid">
+      <div class="card" id="focus-card">
+        <h3>🎯 Today’s Focus</h3>
+        <input id="focusInput" placeholder="Add focus item and press Enter" />
+        <ul id="focusList"></ul>
+        <p id="focusStats" style="margin-top:0.5rem; font-size:0.9rem;"></p>
+      </div>
+
+      <div class="card" id="tasks-card">
+        <h3>📋 Today’s Tasks</h3>
+        <div style="display:flex; gap:8px;">
+          <input id="taskInput" placeholder="Add a task and press Enter" />
+          <select id="taskTag">
+            <option>Work</option>
+            <option>Learning</option>
+            <option>Personal</option>
+          </select>
+        </div>
+        <ul id="taskList"></ul>
+        <p id="taskStats" style="font-size:0.9rem; margin-top:0.5rem;"></p>
+      </div>
+
+      <div class="card" id="habits-card">
+        <h3>🔁 Habit Progress</h3>
+        <p id="habitStatus"></p>
+        <div class="progress">
+          <div class="progress-fill" id="habitBar"></div>
+        </div>
+      </div>
+
+      <div class="card" id="learning-card">
+        <h3>📚 Learning Today</h3>
+        <p id="learningStatus"></p>
+        <div class="progress">
+          <div class="progress-fill" id="learningBar"></div>
+        </div>
+        <button onclick="addLearning()">+ 30 min</button>
+      </div>
+
+      <div class="card" id="work-card">
+        <h3>💼 Work Snapshot</h3>
+        <textarea id="workNote" placeholder="One key thing from work today..."></textarea>
+      </div>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

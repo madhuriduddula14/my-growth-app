@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Learning Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">My Growth</div>
+  <div>
+    <a href="index.html">Dashboard</a>
+    <a href="habits.html">Habits</a>
+    <a href="learning.html" class="active">Learning</a>
+    <a href="work.html">Work</a>
+    <a href="weekly.html">Weekly</a>
+    <a href="focus-history.html">Focus History</a>
+  </div>
+</nav>
+
+<header>
+  <h1>📚 Learning Tracker</h1>
+  <p id="date"></p>
+</header>
+
+<main class="grid" style="grid-template-columns: 2fr 1fr;">
+  <!-- Left Column -->
+  <div class="card">
+    <h3>📚 Add & View Sessions</h3>
+    
+    <div style="display:flex; gap:8px; margin-bottom: 1rem;">
+      <input id="topic" placeholder="What did you learn?" style="flex:1;" />
+      <input id="minutes" type="number" placeholder="Mins" style="width: 80px;" />
+      <button onclick="addSession()">Log</button>
+    </div>
+
+    <ul id="sessions" style="list-style: none; padding: 0;"></ul>
+  </div>
+
+  <!-- Right Column -->
+  <div>
+    <div class="card">
+      <h3>🕒 Today's Goal</h3>
+      <p><strong><span id="todayTotal">0</span></strong> / 120 min</p>
+      <div class="progress">
+        <div class="progress-fill" id="learningBar"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🗓️ This Week</h3>
+      <div class="week-bars" id="weekBars"></div>
+    </div>
+  </div>
+</main>
+
+<script src="js/learning.js"></script>
+</body>
+</html>

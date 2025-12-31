@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weekly Summary</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">My Growth</div>
+  <div>
+    <a href="index.html">Dashboard</a>
+    <a href="habits.html">Habits</a>
+    <a href="learning.html">Learning</a>
+    <a href="work.html">Work</a>
+    <a href="weekly.html" class="active">Weekly</a>
+    <a href="focus-history.html">Focus History</a>
+    <a href="reflection.html">Reflection</a>
+  </div>
+</nav>
+
+<header>
+  <h1>📊 Weekly Summary</h1>
+  <p id="range"></p>
+</header>
+
+<main class="grid">
+  <div class="card">
+    <h3>🔁 Habit Consistency</h3>
+    <p><strong><span id="habitAvg">0</span>%</strong> average</p>
+  </div>
+
+  <div class="card">
+    <h3>📚 Learning Time</h3>
+    <p><strong><span id="learningTotal">0</span></strong> minutes</p>
+    <div class="week-bars" id="weekBars"></div>
+  </div>
+
+  <div class="card">
+    <h3>📅 Learning by Day</h3>
+    <ul id="learningDays"></ul>
+  </div>
+
+  <div class="card">
+    <h3>👩‍💻 Work Highlights</h3>
+    <ul id="workHighlights"></ul>
+  </div>
+
+  <div class="card">
+    <h3>🔍 Insights</h3>
+    <ul id="insights"></ul>
+  </div>
+</main>
+
+<script src="js/weekly.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Habits</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">My Growth</div>
+  <div>
+    <a href="index.html">Dashboard</a>
+    <a href="habits.html" class="active">Habits</a>
+    <a href="learning.html">Learning</a>
+    <a href="work.html">Work</a>
+    <a href="weekly.html">Weekly</a>
+    <a href="focus-history.html">Focus History</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Daily Habits</h1>
+  <p id="date"></p>
+</header>
+
+<main class="grid" style="grid-template-columns: 2fr 1fr;">
+  <div class="card">
+    <h3>🔁 Habits</h3>
+
+    <div id="dynamicHabitList"></div>
+
+    <p id="habitStatus" style="margin-top:0.5rem;"></p>
+
+    <div class="progress">
+      <div class="progress-fill" id="habitBar"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>📆 This Week</h3>
+    <div id="weekHabits"></div>
+  </div>
+</main>
+
+<script src="js/habits.js"></script>
+</body>
+</html>

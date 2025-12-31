@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Work Log</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">My Growth</div>
+  <div>
+    <a href="index.html">Dashboard</a>
+    <a href="habits.html">Habits</a>
+    <a href="learning.html">Learning</a>
+    <a href="work.html" class="active">Work</a>
+    <a href="weekly.html">Weekly</a>
+    <a href="focus-history.html">Focus History</a>
+  </div>
+</nav>
+
+<header>
+  <h1>👩‍💻 Daily Work Log</h1>
+  <p id="date"></p>
+</header>
+
+<main class="grid">
+  <div class="card">
+    <h3>What I worked on</h3>
+    <textarea id="worked"></textarea>
+  </div>
+
+  <div class="card">
+    <h3>What I learned</h3>
+    <textarea id="learned"></textarea>
+  </div>
+
+  <div class="card">
+    <h3>Blocker</h3>
+    <textarea id="blocker"></textarea>
+  </div>
+
+  <div class="card">
+    <h3>Win 🎉</h3>
+    <textarea id="win"></textarea>
+  </div>
+</main>
+
+<script src="js/work.js"></script>
+</body>
+</html>

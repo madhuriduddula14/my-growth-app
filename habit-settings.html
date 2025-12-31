@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Habit Settings</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">My Growth</div>
+  <div>
+    <a href="index.html">Dashboard</a>
+    <a href="habits.html">Habits</a>
+    <a href="habit-settings.html" class="active">Settings</a>
+  </div>
+</nav>
+
+<header>
+  <h1>⚙️ Habit Settings</h1>
+  <p>Evolve your habits as you evolve.</p>
+</header>
+
+<main class="grid">
+  <div class="card" style="grid-column: span 2;">
+    <h3>Manage Habits</h3>
+    <ul id="habitList" style="list-style: none; padding: 0;"></ul>
+  </div>
+  <div class="card" style="grid-column: span 2;">
+    <h3>Add New Habit</h3>
+    <input id="newHabitText" placeholder="e.g., Journal for 5 minutes" />
+    <select id="newHabitCategory">
+      <option>🌅 Morning</option>
+      <option>📚 Growth</option>
+      <option>💚 Health</option>
+    </select>
+    <button id="addHabitBtn">Add Habit</button>
+  </div>
+</main>
+
+<script src="js/habit-settings.js"></script>
+</body>
+</html>
